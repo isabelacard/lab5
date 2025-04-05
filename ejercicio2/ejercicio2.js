@@ -28,3 +28,12 @@ console.log(existeFruta("uva"));
 
 let frutasCortas = frutas.filter(fruta => fruta.length <= 4);
 console.log(frutasCortas);
+
+function eliminarFruta(nombreFruta) {
+    const index = frutas.indexOf(nombreFruta);
+    if (index !== -1) {
+        frutas.splice(index, 1);
+        return true;
+    }
+    return false;
+}

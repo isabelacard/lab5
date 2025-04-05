@@ -24,3 +24,7 @@ function existeFruta(nombreFruta) {
 
 console.log(existeFruta("mango")); 
 console.log(existeFruta("uva")); 
+
+
+let frutasCortas = frutas.filter(fruta => fruta.length <= 4);
+console.log(frutasCortas);

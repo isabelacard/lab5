@@ -21,5 +21,7 @@ while (jugar) {
         (usuario === "TIJERA" && computadora === "PAPEL")
     ) {
         alert("¡FELICIDADES...GANASTE! 😄");
-    } 
+    } else {
+        alert("LO SIENTO...PERDISTE 🥺");
+    }
 }

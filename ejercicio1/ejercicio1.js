@@ -1,0 +1,1 @@
+const opciones = ["PIEDRA", "PAPEL", "TIJERA"];

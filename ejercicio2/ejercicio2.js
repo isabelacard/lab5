@@ -23,7 +23,7 @@ console.log("Frutas en plural:", frutasPlural);
 function existeFruta(nombreFruta) {
     return frutas.includes(nombreFruta);
 }
-console.log("¿Existe la fruta mango'?: ", existeFruta("mango")); 
+console.log("¿Existe la fruta mango?: ", existeFruta("mango")); 
 console.log("¿Existe la fruta uva?: ", existeFruta("uva"));
 
 

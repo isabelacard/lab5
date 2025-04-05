@@ -15,5 +15,11 @@ while (jugar) {
 
     if (usuario === computadora) {
         alert("¡ESTAMOS EMPATADOS!");
+    } else if (
+        (usuario === "PIEDRA" && computadora === "TIJERA") ||
+        (usuario === "PAPEL" && computadora === "PIEDRA") ||
+        (usuario === "TIJERA" && computadora === "PAPEL")
+    ) {
+        alert("¡FELICIDADES...GANASTE! 😄");
     } 
 }

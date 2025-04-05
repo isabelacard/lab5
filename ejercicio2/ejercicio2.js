@@ -10,3 +10,10 @@ function SingularAplural(palabra) {
     }
     return palabra + "s"
 }
+
+let frutasPlural = [];
+
+for (let fruta of frutas) {
+    frutasPlural.push(SingularAplural(fruta));
+    console.log(SingularAplural(fruta));
+}

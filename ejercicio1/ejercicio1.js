@@ -25,3 +25,9 @@ while (jugar) {
         alert("LO SIENTO...PERDISTE 🥺");
     }
 }
+
+let respuesta = prompt("¿Quieres jugar de nuevo? (S/N)").toUpperCase();
+if (respuesta === "N") {
+    jugar = false;
+    alert("GRACIAS POR JUGAR <3");
+}

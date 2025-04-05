@@ -1,8 +1,9 @@
 let frutas = ["manzana", "banano", "uva", "pera", "sandia", "kiwi", "naranja"]
+console.log("Arreglo original de frutas:", frutas);
 
-console.log (frutas)
 
 frutas.sort()
+console.log("Frutas ordenadas alfabéticamente:", frutas);
 
 function SingularAplural(palabra) {
     if (palabra.endsWith("s")) {
@@ -15,19 +16,19 @@ let frutasPlural = [];
 
 for (let fruta of frutas) {
     frutasPlural.push(SingularAplural(fruta));
-    console.log(SingularAplural(fruta));
 }
+console.log("Frutas en plural:", frutasPlural);
 
 function existeFruta(nombreFruta) {
     return frutas.includes(nombreFruta);
 }
 
-console.log(existeFruta("mango")); 
-console.log(existeFruta("uva")); 
+console.log("¿Existe la fruta mango'?: ", existeFruta("mango")); 
+console.log("¿Existe la fruta uva?: ", existeFruta("uva"));
 
 
 let frutasCortas = frutas.filter(fruta => fruta.length <= 4);
-console.log(frutasCortas);
+console.log("Frutas con 4 letras o menos:", frutasCortas);
 
 function eliminarFruta(nombreFruta) {
     const index = frutas.indexOf(nombreFruta);

@@ -17,3 +17,10 @@ for (let fruta of frutas) {
     frutasPlural.push(SingularAplural(fruta));
     console.log(SingularAplural(fruta));
 }
+
+function existeFruta(nombreFruta) {
+    return frutas.includes(nombreFruta);
+}
+
+console.log(existeFruta("mango")); 
+console.log(existeFruta("uva")); 

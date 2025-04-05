@@ -10,4 +10,6 @@ let jugar = true
 
 while (jugar) {
     let usuario = prompt("Juegue PIEDRA, PAPEL o TIJERA (Escriba SALIR para terminar").toUpperCase();
+
+    alert(computadora)
 }

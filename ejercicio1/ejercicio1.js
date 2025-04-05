@@ -4,12 +4,13 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-let computadora = opciones[getRandomInt(3)]
-
 let jugar = true
 
 while (jugar) {
-    let usuario = prompt("Juegue PIEDRA, PAPEL o TIJERA (Escriba SALIR para terminar)").toUpperCase();
+
+    let computadora = opciones[getRandomInt(3)]
+
+    let usuario = prompt("Juegue PIEDRA, PAPEL o TIJERA").toUpperCase();
 
     alert(computadora)
 
@@ -24,10 +25,13 @@ while (jugar) {
     } else {
         alert("LO SIENTO...PERDISTE 🥺");
     }
+
+
+
+    let respuesta = prompt("¿Quieres jugar de nuevo? (S/N)").toUpperCase();
+    if (respuesta === "N") {
+        jugar = false;
+        alert("GRACIAS POR JUGAR <3");
+    }
 }
 
-let respuesta = prompt("¿Quieres jugar de nuevo? (S/N)").toUpperCase();
-if (respuesta === "N") {
-    jugar = false;
-    alert("GRACIAS POR JUGAR <3");
-}
